@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<quizzes>
+    <quiz type="ox">
+        <question>Kotlin 언어는 안드로이드에서 공식적으로 지원하는 언어가 아니다.</question>
+        <answer>x</answer>
+        <category>컴퓨터언어</category>
+    </quiz>
+    <quiz type="multiple_choice">
+        <question>Kotlin 언어에서 숫자를 표현하기 위한 자료형이 아닌 것은?</question>
+        <answer>String</answer>
+        <category>컴퓨터언어</category>
+        <choices>
+            <choice>Int</choice>
+            <choice>Double</choice>
+            <choice>String</choice>
+            <choice>Float</choice>
+        </choices>
+    </quiz>
+    <quiz type="ox">
+        <question>Kotlin 언어는 JetBrains사에서 제작한 언어이다.</question>
+        <answer>o</answer>
+        <category>컴퓨터언어</category>
+    </quiz>
+    <quiz type="ox">
+        <question>대한민국의 수도는 서울이다.</question>
+        <answer>o</answer>
+        <category>상식</category>
+    </quiz>
+    <quiz type="ox">
+        <question>임진왜란은 1492년에 일어났다.</question>
+        <answer>x</answer>
+        <category>역사</category>
+    </quiz>
+    <quiz type="multiple_choice">
+        <question>한국 영화 최초의 천만 돌파 영화는?</question>
+        <answer>실미도</answer>
+        <category>영화</category>
+        <choices>
+            <choice>왕의 남자</choice>
+            <choice>광해</choice>
+            <choice>실미도</choice>
+            <choice>쉬리</choice>
+        </choices>
+    </quiz>
+</quizzes>
