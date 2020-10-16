@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button android:id="@+id/center" android:text="C" android:layout_width="50dp" android:layout_height="50dp"
+        android:layout_centerInParent="true" />
+    <Button android:text="1" android:layout_width="100dp" android:layout_height="50dp"
+        android:layout_above="@id/center" android:layout_alignLeft="@id/center" />
+    <Button android:text="2" android:layout_width="100dp" android:layout_height="50dp"
+        android:layout_below="@id/center" android:layout_alignRight="@id/center" />
+    <Button android:text="3" android:layout_width="50dp" android:layout_height="100dp"
+        android:layout_alignBottom="@id/center" android:layout_toLeftOf="@id/center" />
+    <Button android:text="4" android:layout_width="50dp" android:layout_height="100dp"
+        android:layout_alignTop="@id/center" android:layout_toRightOf="@id/center" />
+
+</RelativeLayout>
