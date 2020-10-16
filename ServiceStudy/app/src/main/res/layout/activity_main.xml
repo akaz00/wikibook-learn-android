@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/random_num_from_bound_service"
+        android:text="바운드 서비스를 통해 난수 반환받기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 시작 서비스를 시작, 정지하고 서비스의 난수 반환 기능을 실행할 세 개의 버튼을 추가 -->
+    <Button
+        android:id="@+id/start_service"
+        android:text="서비스 시작"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/stop_service"
+        android:text="서비스 정지"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/random_num_from_started_service"
+        android:text="시작 서비스를 통해 난수 반환받기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
