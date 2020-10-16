@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <!-- 상태 알림 바의 색상을 변경하기 위해 colorPrimaryDark 값을 변경 -->
+    <color name="colorPrimaryDark">#11024F</color> (1)
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- 텍스트 색상 추가 -->
+    <color name="textColor">#EEEEEE</color> (2)
+    <color name="textColorHighlight">#FFFFFF</color>
+
+    <!-- 그러데이션 시작, 끝 색상 추가 -->
+    <color name="gradientStartColor">#8508C9</color> (3)
+    <color name="gradientEndColor">#11024F</color> (3)
+</resources>
