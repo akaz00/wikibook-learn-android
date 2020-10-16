@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressViewAttrs">
+
+        <attr name="progressBackgroundImage" format="reference" />
+        <attr name="showBackgroundImage" format="boolean" />
+        <attr name="progressBackgroundColor" format="color" />
+    </declare-styleable>
+
+</resources>

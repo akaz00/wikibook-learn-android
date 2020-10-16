@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/time_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <EditText
+        android:id="@+id/manual_time_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="초 단위 시간 입력"
+        android:text="60" />
+
+</LinearLayout>

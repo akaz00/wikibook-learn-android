@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="알람 설정">
+
+        <EditTextPreference
+            android:defaultValue="5,10,15,20,25,30"
+            android:dialogMessage="알람 시간 설정 (단위는 분)"
+            android:key="preset_times"
+            android:summary="알람 시간을 설정합니다."
+            android:title="알람 시간 설정"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:entries="@array/notify_method_entries"
+            android:entryValues="@array/notify_method_values"
+            android:key="notify_method"
+            android:summary="%s"
+            android:title="알람 방식"
+            app:iconSpaceReserved="false" />
+
+        <SeekBarPreference
+            android:defaultValue="50"
+            android:key="volume"
+            android:max="100"
+            android:summary="알람 음악의 볼륨을 설정합니다."
+            android:title="볼륨 설정"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

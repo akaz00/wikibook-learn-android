@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/quote_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/quote_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="18sp" />
+
+    <!-- 공유 버튼 추가 -->
+    <Button
+        android:id="@+id/quote_share_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#007bff"
+        android:text="명언 공유"
+        android:textColor="#FFFFFF" />
+
+    <!-- 출처 검색 버튼 추가 -->
+    <Button
+        android:id="@+id/quote_from_search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#28a745"
+        android:text="출처 검색"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

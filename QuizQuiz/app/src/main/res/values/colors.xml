@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- 카드뷰 배경으로 사용할 색상 추가 -->
+    <color name="cardGradientFrom">#037FFC</color>
+    <color name="cardGradientTo">#0064C9</color>
+
+    <color name="answerChoiceButtonColorFrom">#00cfffc2</color>
+    <color name="answerChoiceButtonColorTo">#FFcfffc2</color>
+</resources>
