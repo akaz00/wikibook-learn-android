@@ -13,12 +13,14 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import androidx.viewpager.widget.ViewPager
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
 
 class WeatherDustMainActivity : AppCompatActivity() {
-    private lateinit var mPager: ViewPager
+    private lateinit var mPager: ViewPager2
 
     // (1)
     private var lat: Double = 0.0
@@ -52,19 +54,20 @@ class WeatherDustMainActivity : AppCompatActivity() {
                 locationManager.removeUpdates(this)
 
                 // (8)
-                val pagerAdapter = MyPagerAdapter(supportFragmentManager)
+                val pagerAdapter = MyPagerAdapter()
                 mPager.adapter = pagerAdapter
-                mPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+                mPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                     override fun onPageScrollStateChanged(p0: Int) {}
                     override fun onPageScrolled(p0: Int, p1: Float, p2: Int) {}
                     override fun onPageSelected(position: Int) {
                         if(position == 0) {
                             // (1)
-                            val fragment = mPager.adapter?.instantiateItem(mPager, position) as WeatherPageFragment
+                            // https://stackoverflow.com/questions/55728719/get-current-fragment-with-viewpager2
+                            val fragment = supportFragmentManager.findFragmentByTag("f" + position) as WeatherPageFragment
                             fragment.startAnimation()
                         } else if(position == 1) {
                             // 미세먼지 정보 프래그먼트로 변경된 시점에도 같은 방식으로 startAnimation 메서드를 호출
-                            val fragment = mPager.adapter?.instantiateItem(mPager, position) as DustPageFragment
+                            val fragment = supportFragmentManager.findFragmentByTag("f" + position) as DustPageFragment
                             fragment.startAnimation()
                         }
                     }
@@ -109,12 +112,10 @@ class WeatherDustMainActivity : AppCompatActivity() {
         }
     }
 
-    // (3)
-    private inner class MyPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
-        // (4)
-        override fun getCount(): Int = 2
-        // (5)
-        override fun getItem(position: Int): Fragment {
+    private inner class MyPagerAdapter : FragmentStateAdapter(this) {
+        override fun getItemCount(): Int = 2
+
+        override fun createFragment(position: Int): Fragment {
             return when(position) {
                 0 -> WeatherPageFragment.newInstance(lat, lon)
                 1 -> DustPageFragment.newInstance(lat, lon)
