@@ -17,7 +17,7 @@ data class Quote(var idx: Int, var text: String, var from: String = "") {
         }
 
         // 저장된 모든 명언을 담은 리스트를 반환하는 함수
-        fun getQuotesFromPreference(pref: SharedPreferences): List<Quote> {
+        fun getQuotesFromPreference(pref: SharedPreferences): MutableList<Quote> {
             // (2)
             val quotes = mutableListOf<Quote>()
 

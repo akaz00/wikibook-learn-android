@@ -109,6 +109,7 @@ class PomodoroService : Service() {
                         when(notifyMethod) {
                             // (1)
                             "vibration" -> {
+                                // Log.d("mytag", "Vibrating...")
                                 if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                                     vibrator.vibrate(VibrationEffect.createOneShot(vibrationTimeInMS, VibrationEffect.DEFAULT_AMPLITUDE))
                                 } else {

@@ -11,7 +11,7 @@ import java.util.*
 
 class QuoteMainActivity : AppCompatActivity() {
     // (1)
-    private lateinit var quotes: List<Quote>
+    private lateinit var quotes: MutableList<Quote>
     private lateinit var pref: SharedPreferences
 
     // 초기 명언 데이터를 저장하는 역할을 수행하는 initializeQuotes 메서드

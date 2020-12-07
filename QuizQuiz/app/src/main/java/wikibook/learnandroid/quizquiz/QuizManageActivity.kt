@@ -25,9 +25,9 @@ class QuizManageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.quiz_manage_activity)
 
-        mode = intent.getStringExtra("mode")
+        mode = intent.getStringExtra("mode")!!
         if(mode == "modify") {
-            quiz = intent.getParcelableExtra<Quiz>("quiz")
+            quiz = intent.getParcelableExtra<Quiz>("quiz")!!
             // 적절한 버튼 레이블 설정
             findViewById<Button>(R.id.confirm).text = "퀴즈 수정"
         } else {
