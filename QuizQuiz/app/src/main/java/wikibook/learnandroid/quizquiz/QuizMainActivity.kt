@@ -13,6 +13,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import org.w3c.dom.Element
+// Quiz 관련 클래스 import 구문 추가
 import wikibook.learnandroid.quizquiz.database.Quiz
 import wikibook.learnandroid.quizquiz.database.QuizDatabase
 import javax.xml.parsers.DocumentBuilderFactory
