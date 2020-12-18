@@ -43,7 +43,7 @@ class WeatherPageFragment : Fragment() {
             // 번들 객체에 위치 정보를 추가
             args.putDouble("lat", lat)
             args.putDouble("lon", lon)
-            fragment.setArguments(args)
+            fragment.arguments = args
 
             return fragment
         }
