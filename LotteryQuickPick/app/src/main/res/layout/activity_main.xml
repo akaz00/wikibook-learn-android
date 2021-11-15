@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="36sp"
+        android:text="00-00-00-00-00-00"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="번호 생성"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#33CC00" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="번호 저장" />
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장된 번호 확인" />
+
+    <Button
+        android:id="@+id/check_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="당첨 결과 확인" />
+
+</LinearLayout>
