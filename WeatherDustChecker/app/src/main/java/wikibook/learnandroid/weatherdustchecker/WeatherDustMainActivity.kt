@@ -54,6 +54,7 @@ class WeatherDustMainActivity : AppCompatActivity() {
                 // (8)
                 val pagerAdapter = MyPagerAdapter(supportFragmentManager)
                 mPager.adapter = pagerAdapter
+                mPager.isSaveEnabled = false
                 mPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
                     override fun onPageScrollStateChanged(p0: Int) {}
                     override fun onPageScrolled(p0: Int, p1: Float, p2: Int) {}
